@@ -1,0 +1,25 @@
+{
+  "name": "sdl-api",
+  "version": "1.0.0",
+  "description": "Simple database logger backend (API)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isostarec/sdl-api.git"
+  },
+  "author": "Ivan Šostarec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isostarec/sdl-api/issues"
+  },
+  "homepage": "https://github.com/isostarec/sdl-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.7"
+  }
+}
