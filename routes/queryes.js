@@ -24,6 +24,6 @@ router.post("/", queryController.createQuery);
 // router.put("/api/queryes/:id", function(req, res) {
 // });
 
-router.get("/delete/:_id", queryController.removeQuery);
+router.delete("/delete/:_id", queryController.removeQuery);
 
 module.exports = router;
