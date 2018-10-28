@@ -7,7 +7,8 @@ let serverSchema = new mongoose.Schema({
     connString: String,
     info: String,
     createDate: Date,
-    createdBy: String
+    createdBy: String,
+    numberOfQueryes: Number
 }) 
 
 module.exports = serverSchema;

@@ -22,13 +22,13 @@ exports.getServers = async function (req, res, next){
   exports.createServer =  async function (req, res, next){
     try
     {
-      let newServer = req.body
-      newServer.createDate = new Date()
+      let newserver = req.body
+      newserver.createDate = new Date()
 
       if(!req.body.name){
         return res.status(400).json({status: 400, message: "Invalid user input! No name supplied!"}) 
       }
-        db.collection(collections.SERVERS_COLLECTION).insertOne(newServer, (err, doc) => {
+        db.collection(collections.SERVERS_COLLECTION).insertOne(newserver, (err, doc) => {
           return res.status(201).json(doc.ops[0])
         })
     }
